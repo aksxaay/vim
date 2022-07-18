@@ -1,0 +1,67 @@
+
+- [Movement Keys](#movement-keys)
+    - [single movement](#single-movement)
+    - [word movements](#word-movements)
+    - [editing commands](#editing-commands)
+
+# Movement Keys
+
+### single movement
+
+
+| Shortcut | Alias               | Function            |
+| -------- | ------------------- | ------------------- |
+| j k      | vertical movement   | move up and down    |
+| h l      | horizontal movement | move left and right |
+
+
+### word movements
+
+
+| Shortcut  |       Alias       |                            Function |
+| :-------- | :---------------: | ----------------------------------: |
+| w         |     word hop      |            hop word(exclude spaces) |
+| W         |   true word hop   |          hop forward by actual word |
+| :-------- | :---------------: | ----------------------------------: |
+| b         | backward word hop | hop word backwards (exclude spaces) |
+| B         | true backword hop |        hop backwards by actual word |
+
+
+### editing commands
+
+| Shortcut |       Alias       |                       Function |
+| -------- | :---------------: | -----------------------------: |
+| y        |       yank        |             yank (buffer save) |
+| yy       |    double yank    |      yank a line (buffer save) |
+| p        |        put        |                   paste a line |
+| -------- | :---------------: | -----------------------------: |
+| dd       |   double delete   | delete that line (buffer save) |
+
+\***imp** *yank* and *delete* share the same buffer
+
+| Shortcut | Alias |                        Function |
+| -------- | :---: | ------------------------------: |
+| u        | undo  | undoes the change (buffer save) |
+| CTRL + r | redo  |   redoes the undo (buffer save) |
+
+
+Delete an entire function
+dd dd dd works but not efficient
+
+| Shortcut      |         Alias         |                                              Function |
+| ------------- | :-------------------: | ----------------------------------------------------: |
+| SHIFT + v     |   VISUAL LINE MODE    | highlight an entire line (goes into visual line mode) |
+| movement keys | multiple lines select |                             select more than one line |
+| v             | visual mode at cursor |                      goes into visual mode right away |
+
+
+| Shortcut |      Alias       |                                        Function |
+| -------- | :--------------: | ----------------------------------------------: |
+| esc      | exit INSERT MODE |                                                 |
+| CTRL + c | exit INSERT MODE |                       doesn't work in all cases |
+| CTRL + [ | exit INSERT MODE | apparently works a little better than the above |
+
+
+
+### save file
+```:w -> save file```

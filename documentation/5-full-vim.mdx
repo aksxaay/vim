@@ -1,0 +1,74 @@
+# Vertical Domination
+
+### vim movement
+
+
+| Shortcut              |             Alias             |                           Function |
+| :-------------------- | :---------------------------: | ---------------------------------: |
+| :e /path/to/file      |          open a file          |                    top of document |
+| :e src/**/fuzzyFinder | fuzzy finder file search(TAB) |                         you get it |
+| --                    |              --               |                                 -- |
+| CTRL + ^              |          swap files           |               swap between 2 files |
+| CTRL + o CTRL + I     |   walk forwards in history    | hop around last known cursor place |
+|                       |                               |                                    |
+
+
+get a CTRL + p like plugin because it matches
+
+open up a different file really quickly.
+- fuzzy finder (telescope?)
+- swap between the last 2 files
+- CTRL + ^ (swap files)
+
+
+Types of Marks
+- local marks (within the files)
+- global marks
+
+have 3 - 4 marks at any one time and keep them on your most active fingers
+most important - least importan
+primary - secondary - tertiary - quaternary
+
+logical groupings of them.
+
+how to mark.
+
+`mt` - mark to file at <t>
+`"t` - jump back to file at <t>
+in file marks are weird.
+
+`'t` - I guess is for the local marks these are a little tricky.
+global marks can be anything.
+
+`mH` - global mark at just about anything. mark at this line position any file.
+`"H` - this is pretty convenient.
+
+
+```
+:ls list
+:bd delete
+]b next
+[b prev
+]B last
+[B first
+Ctrl-6 alternate
+:e add one file
+:n add multiple files
+:b select by buffer name
+```
+
+[vim signature](https://github.com/kshenoy/vim-signature) - for marks
+
+
+### window splits / tabs and things.
+CTRL + w => window operation
+| Shortcut                               |                Alias                 |                                                Function |
+| :------------------------------------- | :----------------------------------: | ------------------------------------------------------: |
+| CTRL + w v                             |         open vertical splits         |                            open a vertical split beside |
+| CTRL + w s                             |           horizontal split           |                      open a horizontal split down below |
+| CTRL + w o                             |       closes every other split       | closes everything other than the one you're working on. |
+| :resize / :vertical resize <input no.> |    give input number to do that.     |                                                         |
+| CTRL + w =                             |          evenly distribute           |         evenly distribute the space between every split |
+| CTRL + w r                             |        rotate current buffer         |                                                         |
+| CTRL + w H                             | go from vertical to horizontal split |                                                         |
+| :h                                     |              help menu               |                                         and then closes |

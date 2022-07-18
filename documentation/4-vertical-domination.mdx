@@ -1,0 +1,49 @@
+# Vertical Domination
+
+### movement
+
+
+| Shortcut |    Alias     |               Function |
+| :------- | :----------: | ---------------------: |
+| gg       |   goto top   |        top of document |
+| G(SHIFT) | goto bottom  | bottom of the document |
+| --       |      --      |                     -- |
+| :100     | jump to line |                        |
+| 100G     | jump to line |    personal preference |
+
+
+| Shortcut           |              Alias               |                                                                      Function |
+| :----------------- | :------------------------------: | ----------------------------------------------------------------------------: |
+| <no. input>h j k l | walk forwards (relative numbers) |                                         walk forwards by the number mentioned |
+| CTRL + u CTRL + D  |       page up / page down        | page up and page down can be smoothened out w  vim smoothie goes by half page |
+
+| Shortcut |       Alias        |                                                   Function |
+| :------- | :----------------: | ---------------------------------------------------------: |
+| { }      |   paragraph walk   |                        moves by huge block contiguous mode |
+| %        | jump matching pair | jump to the matching pair of brackets braces / parantheses |
+
+% jump doesn't work
+go a little up `12k + w + %` gotta land onto the curly braces tho
+you can also `f{ + %` its really intuitive
+use to get to the top of the function
+*note* doesn't work on "quotes"
+
+to delete the if statement
+`SHIFT V + 3j + d`
+`d4d`
+`di{`
+`d2i{`
+`ci{` works with paragraphs as well
+`cip` - deletes paragraph and puts into INSERT mode 
+`i` can be used for motion?
+`yi(` - to copy the insides of the paranthese
+`vi(` - to copy the insides of the brackets
+
+`va(` - to copy the insides of the brackets incl. brackets
+`da{` include the curly brace
+`diw` delete the current word that we're on, if in the middle of a word.
+
+
+
+*bold* capitalized version is backward and forwards
+
