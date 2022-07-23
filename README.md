@@ -14,3 +14,5 @@ There's a total of six videos split into
 - Vertical Domination
 - Full Vim - File Movements, Buffers and Splits
 - [Personal Observations](/documentation/setup.md)
+- [INSERT MODE GUIDE](https://dev.to/iggredible/the-only-vim-insert-mode-cheatsheet-you-ever-needed-nk9#:~:text=Ctrl%2Dx%20Ctrl%2Dl%20%22,%2Do%20%22%20insert%20from%20omnicompletion.)
+- 
